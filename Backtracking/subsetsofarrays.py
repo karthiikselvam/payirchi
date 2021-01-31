@@ -22,7 +22,7 @@ def subsets_on_fly(arr,arr_index,buffer,buffer_index,result):
     return result
 
 result = []
-arr  = [1,2,3]
-buffer = [None,None,None]
+arr  = [1,2]
+buffer = [None,None]
 r = subsets_on_fly(arr,0,buffer,0,result)
 print(r)
