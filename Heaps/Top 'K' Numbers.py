@@ -1,17 +1,16 @@
 from heapq import *
 
 def GiveMeTopKNumbers(arr,k):
-    
-    minheap = []
-    for i in range(k):
-        minheap.append(arr[i])
+   minheap = []
+   for i in range(k):
+       minheap.append(arr[i])
 
-    for k in range(k,len(arr)):
-        if arr[k] > minheap[0]:
-            heappop(minheap)
-            heappush(minheap,arr[k])
-    
-    return minheap
+   for l in range(k , len(arr)):
+       if arr[l] > minheap[0]:
+           heappop(minheap)
+           heappush(minheap,arr[l])
+
+   return minheap
 
 
 
