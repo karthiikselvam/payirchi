@@ -3,7 +3,6 @@ set2 = [7,8,9,6,5]
 
 
 def disjointSet(set1,set2):
-    
     for i in range(len(set1)):
         for k in range(len(set2)):
             if set1[i] == set2[i]:
