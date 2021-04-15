@@ -13,3 +13,8 @@ def kidsWithCandies(candies,extraCandies):
 
 result = kidsWithCandies([12,1,12],10)
 print(result)
+
+# One liner :
+# maxval = max(candies)
+# return [True if x+extracandies >= maxval else False  for x in candies]
+
