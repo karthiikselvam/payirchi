@@ -1,7 +1,6 @@
-from heapq import *
+#from heapq import * 
 
 def restoreString(s, indices):
-    
         
     out = []    
     arr = []
