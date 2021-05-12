@@ -13,7 +13,6 @@ class Graph(object):
         self.edges[to_node].append(from_node)
         self.distances[(from_node, to_node)] = distance
 
-
 def dijkstra(graph, initial):
     visited = {initial: 0}
     path = {}
