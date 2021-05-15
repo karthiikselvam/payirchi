@@ -19,4 +19,3 @@ def nextGreatestElement(arr):
 
 
 result = nextGreatestElement(arr)
-print(result)
