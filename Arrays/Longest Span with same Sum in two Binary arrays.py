@@ -24,4 +24,4 @@ def longestSpanSum(arr1,arr2):
 arr1 = [0, 1, 0, 0, 0, 0]
 arr2 = [1, 0, 1, 0, 0, 1]
 result  = longestSpanSum(arr1, arr2)
-print(result)
+print(result)   
