@@ -15,7 +15,7 @@ def createTargetArray(nums, index):
                     else:
                         nexttemp = target[j]
                         target[j] = temp
-                        temp = nexttemp
+                        temp = nextttemp
                         j += 1
         return target
 
