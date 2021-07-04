@@ -1,30 +1,38 @@
-class Node :
-    def __init__(self,val = 0):
+class Node:
+    def __init__(self,val=None):
+        self.val = val
         self.next = None
-        self.val  = val
 
-def reversal(head):
-    current = head
+
+def reverseLL(head):
     previous = None
+    nextptr  = None  
+    current  = head
+    
     while(current != None):
-        next = current.next
+        nextptr = current.next
         current.next = previous
-        previous = current
-        current = next
-    return previous
+        previous   = current
+        current = nextptr
+    
+    while previous:
+        print(previous.val,end= "")
+        previous = previous.next
 
-first = Node(1)
-second = Node(2)
-third = Node(3)
-fourth = Node(4)
 
-first.next = second
-second.next = third
-third.next = fourth
-head = first
 
-result = reversal(head)
 
-while(result != None):
-    print(result.val)
-    result = result.next
+node1 = Node(1)
+node2 = Node(2)
+node3 = Node(3)
+node4 = Node(4)
+node5 = Node(5)
+
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+head = node1
+reverseLL(head)
